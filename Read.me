@@ -1,0 +1,77 @@
+# 🔐 Password Cracking & Recovery
+
+## Networkwalks Cybersecurity Internship — Week 3
+
+> **Practical:** Password Recovery & Hash Analysis  
+> **Focus:** PDF Password Protection • Hash Extraction • John the Ripper
+
+---
+
+## 📌 Project Summary
+
+This week's practical introduced me to password security and password recovery techniques.
+
+I was provided with a password-protected PDF and challenged to recover the password through an authorized cybersecurity training exercise.
+
+The practical allowed me to work through the complete process, from extracting the password hash to using a password-auditing tool and finally verifying the recovered password by opening the protected PDF.
+
+---
+
+# 🛠️ Resources Used
+
+### 1. Networkwalks Hash Calculator
+
+The Networkwalks Hash Calculator was used to process the password-protected PDF and extract the hash required for the password-recovery stage.
+
+**Purpose:**
+- Generate hashes
+- Process files
+- Extract a usable hash from a password-protected PDF
+
+---
+
+### 2. Johnny / John the Ripper
+
+I used **Johnny**, the graphical interface for John the Ripper, to perform the password-recovery process.
+
+The extracted PDF hash was loaded into the application and the password-recovery attack was started.
+
+The tool successfully identified the password.
+
+**Result:** ✅ Password recovered
+
+---
+
+### 3. Online HashCrack
+
+Online HashCrack was also used as part of the password-auditing workflow.
+
+The platform provides password-audit and recovery functionality for supported hash types and encrypted files.
+
+---
+
+# 🔄 THE ATTACK WORKFLOW
+
+```text
+              🔒 LOCKED PDF
+                    │
+                    ▼
+        NETWORKWALKS HASH CALCULATOR
+                    │
+                    ▼
+             📋 EXTRACTED HASH
+                    │
+                    ▼
+              SAVE HASH LOCALLY
+                    │
+                    ▼
+          JOHNNY / JOHN THE RIPPER
+                    │
+                    ▼
+          🔑 PASSWORD RECOVERED
+                    │
+                    ▼
+             🔓 UNLOCK PDF
+                    │
+                    ▼
+             ✅ ACCESS VERIFIED
